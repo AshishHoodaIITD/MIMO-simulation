@@ -13,8 +13,7 @@ H2 = complex(H2,G2);
 H3=sqrt(Nt*Nr)*random('rayl',Nr,Nt);
 G3 = sqrt(Nt*Nr)*random('rayl',Nr,Nt);
 H3 = complex(H3,G3);
- Pt = ones(1,10);
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Pt = ones(1,10);
 for j = 1:10
     Pt(j) = j;
 end
@@ -33,12 +32,6 @@ for i = 1:size(S,2)
     G = H;
     N(i) = Rate(G, Qopt(G, 5, S(i)), var);
 end
-%plot(10*log10(Pt),C,'-x','LineWidth',3);
-%hold on;
-%scatter(Pt, C);
-% %hold;
-% %scatter(S,N);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Pt = 50;
 Nt=64;
 N = 8;
@@ -93,13 +86,7 @@ for i=1:32
    end
         W32(i,c) = complex(rand,rand);
 end
-%  Qo = Qopt(H, Pt, Ns);
-%  Qa = Qact(Qo, W1, Pt, 4);
-% Rate(H ,Qo, var)
-% Rate(H, Qa, var)
-
 Pt = ones(1,10);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 for j = 1:10
     Pt(j) = j/10;
 end
